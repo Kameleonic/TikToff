@@ -19524,15 +19524,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_app_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/app.vue */ "./resources/js/components/app.vue");
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
-Vue.component('app', (__webpack_require__(/*! ./components/app.vue */ "./resources/js/components/app.vue")["default"]));
+vue.component('app', (__webpack_require__(/*! ./components/app.vue */ "./resources/js/components/app.vue")["default"]));
 
-
-var app = new Vue({
-  el: '#app',
-  components: {
-    App: _components_app_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
-  }
-});
+console.log(vue__WEBPACK_IMPORTED_MODULE_0__);
+ // const app = new vue({
+//     el: '#app',
+//     components: { App }
+// });
+// const vue
 
 /***/ }),
 

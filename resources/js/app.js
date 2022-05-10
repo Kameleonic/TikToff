@@ -1,12 +1,15 @@
 require('./bootstrap');
-Vue.component('app', require('./components/app.vue').default);
+vue.component('app', require('./components/app.vue').default);
 
-import { createApp } from 'vue'
+import * as all from 'vue'
+console.log(all)
 
 
 import App from './components/app.vue';
 
-const app = new Vue({
-    el: '#app',
-    components: { App }
-});
+// const app = new vue({
+//     el: '#app',
+//     components: { App }
+// });
+
+// const vue
