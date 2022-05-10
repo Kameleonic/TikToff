@@ -8,7 +8,5 @@ import App from './components/app.vue';
 
 const app = new Vue({
     el: '#app',
-    components: {
-        'app': require('./components/app.vue'),
-    }
+    components: { App }
 });

@@ -19530,7 +19530,7 @@ Vue.component('app', (__webpack_require__(/*! ./components/app.vue */ "./resourc
 var app = new Vue({
   el: '#app',
   components: {
-    'app': __webpack_require__(/*! ./components/app.vue */ "./resources/js/components/app.vue")
+    App: _components_app_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
   }
 });
 
