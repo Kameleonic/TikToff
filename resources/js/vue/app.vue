@@ -1,13 +1,11 @@
 <template>
-<div>
-    Hello
+    <div>
+        Hello
     </div>
 </template>
 <script>
 
-export default defineComponent({
-    setup() {
-        
-    },
-})
+export default {
+    
+}
 </script>
