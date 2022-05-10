@@ -1,11 +1,11 @@
 <template>
     <div>
-    Form
+        Form
     </div>
 </template>
 <script>
 
-export default {
+    export default {
     
-}     
+    }     
 </script>

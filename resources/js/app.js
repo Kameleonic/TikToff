@@ -1,8 +1,9 @@
 require('./bootstrap');
 
-import * as Vue from 'vue'
 
-import App from './vue/app'
+
+
+import App from './components/app.vue'
 
 const app = new Vue({
     el: '#app',

@@ -1,11 +1,11 @@
 <template>
     <div>
-        Hello
+        List View
     </div>
 </template>
 <script>
 
-export default {
+    export default {
     
-}
+    }     
 </script>
