@@ -1,11 +1,6 @@
 <template>
-    <div class="todoListContainer">
-        <div class="heading">
-            <h2 id="title">Todo List</h2>
-            <add-item-form />
-        </div>
-        <list-view />
-
+    <div class="app">
+    <h1>{{ greeting }}</h1>
     </div>
 </template>
 <script>
@@ -14,17 +9,22 @@
 import addItemForm from "./addItemForm"
 import listView from "./listView"
 import listItem from "./listItem"
-
 export default {
-    components: {
-        addItemForm,
-        listView,
-        listItem
-    }
-
-
-
+    setup: () => ({
+        greeting: 'Hello World from Vue 3!'
+    })
 }
+
+// export default {
+//     components: {
+//         addItemForm,
+//         listView,
+//         listItem
+//     }
+
+
+
+// }
 </script>
 
 <style scoped>

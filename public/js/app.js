@@ -19381,12 +19381,18 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  components: {
-    addItemForm: _addItemForm__WEBPACK_IMPORTED_MODULE_0__["default"],
-    listView: _listView__WEBPACK_IMPORTED_MODULE_1__["default"],
-    listItem: _listItem__WEBPACK_IMPORTED_MODULE_2__["default"]
+  setup: function setup() {
+    return {
+      greeting: 'Hello World from Vue 3!'
+    };
   }
-});
+}); // export default {
+//     components: {
+//         addItemForm,
+//         listView,
+//         listItem
+//     }
+// }
 
 /***/ }),
 
@@ -19458,26 +19464,12 @@ var _withScopeId = function _withScopeId(n) {
 };
 
 var _hoisted_1 = {
-  "class": "todoListContainer"
+  "class": "app"
 };
-var _hoisted_2 = {
-  "class": "heading"
-};
-
-var _hoisted_3 = /*#__PURE__*/_withScopeId(function () {
-  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", {
-    id: "title"
-  }, "Todo List", -1
-  /* HOISTED */
-  );
-});
-
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  var _component_add_item_form = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("add-item-form");
-
-  var _component_list_view = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("list-view");
-
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [_hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_add_item_form)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_list_view)]);
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.greeting), 1
+  /* TEXT */
+  )]);
 }
 
 /***/ }),
@@ -19528,14 +19520,17 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _components_app__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/app */ "./resources/js/components/app.vue");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+/* harmony import */ var _components_app_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/app.vue */ "./resources/js/components/app.vue");
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
+
+Vue.component('app', (__webpack_require__(/*! ./components/app.vue */ "./resources/js/components/app.vue")["default"]));
 
 
 var app = new Vue({
   el: '#app',
   components: {
-    App: _components_app__WEBPACK_IMPORTED_MODULE_0__["default"]
+    'app': __webpack_require__(/*! ./components/app.vue */ "./resources/js/components/app.vue")
   }
 });
 

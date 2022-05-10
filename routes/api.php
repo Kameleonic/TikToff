@@ -19,7 +19,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/items', [ItemController::class, 'index']);
+Route::get('/items', [ItemController::class, 'items']);
 Route::prefix('/item')->group( function () {
     Route::post('/store', [ItemController::class, 'store']);    /**--Store Function--*/
     Route::put('/{id}', [ItemController::class, 'update']);     /**--Update Function--*/
